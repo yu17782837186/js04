@@ -1,0 +1,45 @@
+<html>
+	<head>
+		<title>js的函数认识</title>
+		<meta charset="UTF-8"/>
+		<script type="text/javascript">
+			//声明函数第一种方式
+			function test1(a1,a2){
+				alert("函数声明一");
+				alert(a2);//没有赋值的情况下默认是undefined
+			}
+			//调用函数 下面都不会报错
+//			test1(1,2,3,4,5);
+//			test1(1);
+//			test1();
+//			test1(1,2);
+			
+//			所有的函数都是对象
+
+			//声明函数第二种方式
+//			var test2=new Function("a1","a2","alert('我是小红'+a1)");
+//			test2();//既是函数的声明又是函数的调用
+//			alert(test2);
+//			alert(test2());
+
+			//声明函数的第三种方式
+//			var a=function(z1,z2){
+//				alert("我是小亮");
+//			}
+//			a(1,2);
+//			alert(a);
+
+			//函数的返回值
+			var testRutern=function(){
+				alert('函数的返回值');
+				return '000';
+			}
+//			alert(testRutern);
+			alert(testRutern()); //没有返回值则是打印undefined
+//			testRutern();
+		</script>
+	</head>
+	<body>
+		<h3>js的函数认识</h3>
+	</body>
+</html>

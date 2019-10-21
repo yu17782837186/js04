@@ -1,0 +1,32 @@
+<html>
+	<head>
+		<title>js的函数学习二</title>
+		<meta charset="UTF-8"/>
+		<script type="text/javascript">
+			function test1(a){
+				alert(a());//在这里a必须是一个函数
+		
+			}
+			var test2=function(){
+				alert("我是小红");
+			}
+//			test2();
+//			alert(test2);
+//			test1(test2); //函数是可以作为实参进行传递的
+//			test1(test2());
+			
+			//开发中用的传递方式
+			function test3(obj){
+//				alert(obj());//必须传的是函数对象，因为有小括号，所以需要执行
+				alert(obj());
+			}
+			test3(function(){
+				alert("一个示例");
+				return 0;
+			})
+		</script>
+	</head>
+	<body>
+		<h3>js的函数学习二</h3>
+	</body>
+</html>
